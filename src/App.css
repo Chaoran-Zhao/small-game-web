@@ -1,0 +1,131 @@
+body{
+    margin: 0px;
+    height: 100%
+}
+
+.left {
+  height: 100%;
+  width: 100px;
+  background-color: #eee;
+  position: fixed;
+  z-index: 1 !important;
+  top:0;
+  left: 0;
+  float: right;
+}
+
+
+@media screen and (max-width: 1400px) {
+  .left {
+    width: 60px;
+  }
+  .footer{
+    padding-left: 60px !important;
+  }
+  .container {
+    padding-left: 60px !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .left {
+    width: 30px;
+  }
+  .logo {
+    visibility: hidden;
+  }
+  .footer{
+    padding-left: 30px !important;
+  }
+  .container {
+    padding-left: 30px !important;
+  }
+}
+.footer {
+  background-color: #999;
+  clear: both;
+  position:fixed;
+  height: 50px;
+  width: 100%;
+  padding-left: 100px;
+  bottom: 0;
+}
+
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 50px);
+  padding-left: 100px;
+}
+.container1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 50px);
+  padding-left: 100px;
+  position: relative;
+}
+.container2 {
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 50px);
+  padding-left: 100px;
+  position: relative;
+}
+
+
+.basicBoard {
+  /* width: 100%;
+  height: 100%; */
+  width: 50%;
+  height: 50%;
+  display: flex; 
+  flex-direction: column;
+  position: absolute;
+}
+
+.row {
+  display: flex;
+  height  : 33%;
+  width: 100%;
+}
+
+.cell {
+  width   : 33%;
+  border  : 2px solid #333;
+  color   : black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+}
+
+.nonBorderCell {
+  width   : 33%;
+  color   : black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+}
+.info {
+  background-color: #fff;
+  border:1px solid #333;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  position: absolute;
+}
+
+.Tbox {
+  border: 2px dashed #999;
+  display: inline;
+  min-height: 50px;
+  min-width: 50px;
+  position: relative;
+}
