@@ -3,6 +3,7 @@ import React from 'react';
 import Nav from "./pages/nav"
 import Home from "./pages/main"
 import Tictac from "./pages/tictac"
+import Slido from './pages/slido';
 import Tower from "./pages/tower"
 import Snek from "./pages/snek"
 import FooterBar from "./pages/footer"
@@ -15,6 +16,7 @@ function App() {
       <main>
       <Routes>
         <Route path="/home" element={<Home />}/>
+        <Route path="/slido" element={<Slido />}/>
         <Route path="/tictactoe" element={<Tictac />}/>
         <Route path="/tower" element={<Tower/>}/>
         <Route path="/snek" element={<Snek />}/>

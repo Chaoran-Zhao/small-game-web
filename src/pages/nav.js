@@ -4,9 +4,8 @@ import '../App.css';
 import logo from '../assets/logo.png';
 function LeftNav() {
   const navigate = useNavigate();
-  const pages = ['Home', 'Tictac', 'Tower', 'Snek'];
-  const pages1 = ['H', 'Ti', 'To', 'S'];
-
+  const pages = ['Home','Tictac', 'Slido','Tower', 'Snek'];
+  const pages1 = ['H', 'Ti', 'Sl','To', 'S'];
   return <>
     <nav className="left sideNav d-flex flex-column">
       <div style={{textAlign:'center'}} ><img className="logo" src={logo} style = {{height:'50px', width: '50px' , margin:'15px', top:'0px'}} alt=""></img> 
@@ -16,6 +15,9 @@ function LeftNav() {
           onClick={()=>{
             if ({page}.page==='Home'){               
               navigate('/home');
+            }
+            if ({page}.page==='Slido'){
+              navigate('/slido');
             }
             if ({page}.page==='Tictac'){
               navigate('/tictactoe');
@@ -34,7 +36,10 @@ function LeftNav() {
             <p key={index} 
             onClick={()=>{
             if ({page}.page==='H'){               
-              navigate('/1');
+              navigate('/home');
+            }
+            if ({page}.page==='Sl'){               
+              navigate('/slido');
             }
             if ({page}.page==='Ti'){
               navigate('/tictactoe');
