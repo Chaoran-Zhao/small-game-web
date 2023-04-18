@@ -15,11 +15,11 @@ function App() {
       <Nav />
       <main>
       <Routes>
-        <Route path="/home" element={<Home />}/>
+        <Route path="/" element={<Home />}/>
         <Route path="/slido" element={<Slido />}/>
         <Route path="/tictactoe" element={<Tictac />}/>
-        <Route path="/tower" element={<Tower/>}/>
-        <Route path="/snek" element={<Snek />}/>
+        {/* <Route path="/tower" element={<Tower/>}/>
+        <Route path="/snek" element={<Snek />}/> */}
       </Routes>  
       </main>
       

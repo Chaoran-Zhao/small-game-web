@@ -1,3 +1,4 @@
+A website that includes small games such as Tic Tac Toe, Slido, and etc. It has shown a strong usage of react hooks. It is available at https://incandescent-rolypoly-4f1c6d.netlify.app/
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
